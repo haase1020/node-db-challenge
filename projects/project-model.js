@@ -61,7 +61,7 @@ function add(project) {
 }
 
 function addTask(task) {
-    return dbv('tasks')
+    return db('tasks')
     .insert(task,'id');
 }
 
