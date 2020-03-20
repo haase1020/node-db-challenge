@@ -5,7 +5,7 @@ const Resources = require('./project-model');
 const router = express.Router();
 
 router.get('/', (req,res)=> {
-    Rescources.findResources()
+    Resources.findResources()
     .then(resources => {
         res.status(200).json(resources)
     })
